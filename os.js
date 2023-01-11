@@ -1,7 +1,7 @@
-var os = require('os');
+var os = require("os");
 
-console.log("Platform: ", + os.platform());
-console.log("Architecture", + os.arch());
+console.log("Platform: ", +os.platform()); // getting NaN, why?
+console.log("Architecture", +os.arch()); // geting NaN, why?
 
-
-os.cpus()
+console.log("Hostname:" + os.hostname());
+console.log(`freemem: ${os.freemem}`);
